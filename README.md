@@ -18,6 +18,8 @@ Build the package (share files between host system and scratchbox via /tmp direc
 	
 	dpkg-buildpackage -rfakeroot
 
+More info about these commands can be found here: http://wiki.maemo.org/Documentation/Maemo_5_Developer_Guide/Packaging,_Deploying_and_Distributing
+
 TODO
 ----
 This list is copied from original repo on gitorious. I will create individual tickets later
