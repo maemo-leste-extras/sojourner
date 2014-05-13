@@ -17,3 +17,22 @@ Install the package dependencies
 Build the package (share files between host system and scratchbox via /tmp directory)
 	
 	dpkg-buildpackage -rfakeroot
+
+TODO
+----
+This list is copied from original repo on gitorious. I will create individual tickets later
+
+* Use urllib2 as per diveintopython, or fix use of gvfs, to support If-Modified-Since and gzip compression. (https doesn’t seem needed any more, so we might be able to still use gvfs rather than rewriting all that code.)
+* Allow hiding talks in the past
+* Colour/highlight talks happing right now (particularly important in favourites)
+* Maybe include “talks starting within half an hour of this one ending”, as seen on fosdem.org event pages?
+* Show something more useful than a blank screen when the user taps Favourites and they don’t have any
+* Have a single list store for events, with filters of it for each view, to make propagating favourites changes less clunky (This actually doesn’t work out so well: the stores have pretty different contents. Maybe instead there should be favourite-added, favourite-removed signals on the Schedule object?)
+* Make launching directly into portrait mode work
+* Use a real Markdown parser for event details
+* Extract links from the schedule, have clickable buttons to go to them
+* Make it possible to show other conferences
+* Ensure the margins are correct
+* Add a map
+* Show the year and dates of the conference on the front screen.
+  
