@@ -26,6 +26,8 @@ setup(
         ('share/sojourner/conferences/rmll2011', ['conferences/rmll2011/rmll2011.cfg']),
         ('share/sojourner/conferences/desktopsummit2011', ['conferences/desktopsummit2011/banner.png']),
         ('share/sojourner/conferences/desktopsummit2011', ['conferences/desktopsummit2011/desktopsummit2011.cfg']),
+        ('share/sojourner/conferences/fosdem2012', ['conferences/fosdem2012/banner.png']),
+        ('share/sojourner/conferences/fosdem2012', ['conferences/fosdem2012/fosdem2012.cfg']),
     ],
     license='GPL v3',
 )

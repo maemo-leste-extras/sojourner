@@ -1,3 +1,9 @@
+sojourner (0.2.5) fremantle; urgency=low
+
+  * Added conference data for FOSDEM 2012.
+
+ -- Olivier Le Thanh Duong <olivier@lethanh.be>  Wed, 01 Feb 2012 17:21:00 +0100
+
 sojourner (0.2.4) fremantle; urgency=low
 
   * Desktop Summit 2011. (Thanks, Olivier Le Thanh Duong)
