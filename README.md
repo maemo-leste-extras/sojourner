@@ -7,10 +7,13 @@ Packaging
 To build sojourner debian package you need N900 SDK. The easiest (but probably not the fastest) way to obtain it is to use vagrant. Configuration file can be downloaded from here: https://github.com/silvio/vagrant-n900-sdk
 
 After booting the virtual machine run scratchbox
-    scratchbox
+
+	scratchbox
 
 Install the package dependencies
-    fakeroot apt-get install cdbs python2.5 python-central
+	
+	fakeroot apt-get install cdbs python2.5 python-central
 
 Build the package (share files between host system and scratchbox via /tmp directory)
-    dpkg-buildpackage -rfakeroot
+	
+	dpkg-buildpackage -rfakeroot
