@@ -8,7 +8,7 @@ Package: sojourner
 XB-Maemo-Display-Name: Sojourner
 Architecture: all
 Section: user/navigation
-Depends: python2.5, python-gobject (>= 2.16), python-hildon, python-notify,
+Depends: python2.5, python-gobject (>= 2.16), python-hildon,
          python-osso, python-dbus
 XS-Python-Version: all
 Description: Desktop Summit 2011 schedule browser

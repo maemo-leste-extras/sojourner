@@ -4,7 +4,7 @@ import gtk
 import gio
 import pango
 import ConfigParser
-from pynotify import Notification
+import hildon
 from sojourner import VERSION
 from sojourner.malvern import *
 from sojourner.updater import Updater
@@ -26,12 +26,11 @@ class MainWindow(MaybeStackableWindow):
                 b.set_sensitive(True)
         else:
             print repr(exc)
-            # Should I use a fake try: raise; except: maybe?
+            
             if isinstance(exc, MalformedSchedule):
-                Notification("Schedule file was malformed").show()
-            elif not isinstance(exc, gio.Error) or \
-                    exc.code != gio.ERROR_CANCELLED:
-                Notification("Couldn't fetch latest schedule").show()
+                hildon.hildon_banner_show_information(self, '', 'Schedule file was malformed')
+            else:
+                hildon.hildon_banner_show_information(self, '', 'Error downloading schedule')
 
     def _on_orientation_changed(self, is_portrait):
         if is_portrait:
@@ -88,16 +87,6 @@ class MainWindow(MaybeStackableWindow):
 
     def run_updater(self):
         updater = Updater(self,
-            # FIXME: this ought to be 'http://fosdem.org/schedule/xml' but that
-            # redirects to an https: URI and GLib in Fremantle seems to be
-            # broken and just fails with 'HTTP Error: Connection terminated
-            # unexpectedly'. So I have a cronjob on my server that mirrors the
-            # schedule. I am so sorry.
-            #
-            # If someone were feeling keen they could reimplement Updater using
-            # urllib2. They could also make it support If-Modified-Since and
-            # gzip.
-            #'http://willthompson.co.uk/misc/sojourner/xml',
             self.__conference.get_schedule_url(),
             self.schedule_file, self.fetched_schedule_cb)
         updater.show_all()

@@ -4,6 +4,8 @@ import gio
 import glib
 import os.path as path
 
+import urllib2
+
 import threading
 
 from sojourner.schedule import Schedule
@@ -40,7 +42,7 @@ class Updater(gtk.Dialog):
         self.connect('response', Updater.__response_cb)
 
         # Stash urls and things
-        self.__source = gio.File(url)
+        self.__sourceUrl = url
         self.__temp = gio.File(target.get_path() + '.tmp')
         self.__target = target
         self.__finished_cb = finished_cb
@@ -61,11 +63,7 @@ class Updater(gtk.Dialog):
     def __download(self):
         """Grabs the latest schedule, if possible."""
         try:
-            self.__source.copy(self.__temp,
-                # Use an idle to be run in the main thread.
-                (lambda c, t: glib.idle_add(self.__progress_cb, c, t)),
-                flags=gio.FILE_COPY_OVERWRITE,
-                cancellable=self.__cancellable)
+            self.__copy()
 
             # FIXME: after this point we can't actually cancel …
 
@@ -86,19 +84,6 @@ class Updater(gtk.Dialog):
             glib.idle_add(self.__finished_copying, schedule, None)
         except Exception, e:
             glib.idle_add(self.__finished_copying, None, e)
-
-    def __progress_cb(self, current_bytes, total_bytes):
-        """Called (in an idle, so in the glib mainloop thread) for each chunk
-        of data downloaded."""
-        self.__stop_pulsing()
-
-        if total_bytes == 0:
-            # The server didn't tell us how big the file is; so the best we
-            # can do is pulse for each chunk of data.
-            self.__progress.pulse()
-        else:
-            fraction = float(current_bytes) / total_bytes
-            self.__progress.set_fraction(fraction)
 
     def __finished_copying(self, schedule, exc):
         """Called in the mainloop thread when the download has succeeded or
@@ -126,3 +111,19 @@ class Updater(gtk.Dialog):
 
     def __response_cb(self, response_id):
         self.__cancellable.cancel()
+
+    def __copy(self):
+        source = urllib2.urlopen(self.__sourceUrl)
+        dest = open(self.__temp.get_path(), 'wb')
+        buffer_size = 1024;
+        while 1:
+            copy_buffer = source.read(buffer_size)
+            if copy_buffer:
+                dest.write(copy_buffer)
+            else:
+                break
+            if self.__cancellable.is_cancelled():
+                break
+
+
+

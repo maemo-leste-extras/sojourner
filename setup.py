@@ -28,6 +28,8 @@ setup(
         ('share/sojourner/conferences/desktopsummit2011', ['conferences/desktopsummit2011/desktopsummit2011.cfg']),
         ('share/sojourner/conferences/fosdem2012', ['conferences/fosdem2012/banner.png']),
         ('share/sojourner/conferences/fosdem2012', ['conferences/fosdem2012/fosdem2012.cfg']),
+        ('share/sojourner/conferences/fosdem2014', ['conferences/fosdem2014/banner.png']),
+        ('share/sojourner/conferences/fosdem2014', ['conferences/fosdem2014/fosdem2014.cfg']),
     ],
     license='GPL v3',
 )
