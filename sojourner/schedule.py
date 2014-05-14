@@ -11,6 +11,8 @@ import colorsys
 import hashlib
 import gtk
 
+import re
+
 from sojourner.malvern import config_file, esc
 
 def getChildrenByTagName(node, name):
@@ -33,6 +35,11 @@ def get_text(node, strip_newlines=False):
         text = '\n\n'.join(
             [p.replace('\n', ' ')
                 for p in tidier_double_newlines.split('\n\n')])
+        
+        # Strip HTML tags
+        # Quick and Dirty: regular expressions shouldn't be used for this
+        text = re.sub(r'<(/)?[a-z]+>', '', text)
+        text = re.sub(r'&amp;', '&', text)
 
     return text.lstrip().rstrip()
 

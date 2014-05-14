@@ -24,7 +24,8 @@ TODO
 ----
 This list is copied from original repo on gitorious. I will create individual tickets later
 
-* Use urllib2 as per diveintopython, or fix use of gvfs, to support If-Modified-Since and gzip compression. (https doesn’t seem needed any more, so we might be able to still use gvfs rather than rewriting all that code.)
+* Update icons and descriptions
+* Release a new package to test the process
 * Allow hiding talks in the past
 * Colour/highlight talks happing right now (particularly important in favourites)
 * Maybe include “talks starting within half an hour of this one ending”, as seen on fosdem.org event pages?
