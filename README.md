@@ -1,6 +1,8 @@
 **Sojourner** is a conference schedule viewer for the [Nokia N900](http://maemo.nokia.com/n900/), the smartphone of choice for the discerning sandal-wearer. Talks can be viewed by topic, by room or by time; your favourite events can be starred for easy browsing later on.
 
-It originally showed the schedule for [FOSDEM](http://fosdem.org/); it has subsequently been made to show others, thanks mainly to wonderful contributors! It's written in *Python* and uses the [Hildon](http://pymaemo.garage.maemo.org/python_hildon_manual/) widget set. Thanks to a really shonky abstraction layer—named *Malvern*—the application also runs with plain [Gtk+](http://www.gtk.org/), though it's not beautiful.
+It originally showed the schedule for [FOSDEM](http://fosdem.org/); it has subsequently been made to show others, thanks mainly to wonderful contributors! It's written in *Python* and uses the [Hildon](http://pymaemo.garage.maemo.org/python_hildon_manual/) widget set. 
+
+This software was created by [Will Thompson](http://willthompson.co.uk/) and he deserves all the credit; I just fix critical bugs and make new releases.
 
 Packaging
 ---------
@@ -23,8 +25,6 @@ More info about these commands can be found here: http://wiki.maemo.org/Document
 TODO
 ----
 This list is copied from original repo on gitorious. I will create individual tickets later
-
-* Update icons and descriptions
 * Release a new package to test the process
 * Allow hiding talks in the past
 * Colour/highlight talks happing right now (particularly important in favourites)
