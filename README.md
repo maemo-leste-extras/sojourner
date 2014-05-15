@@ -22,6 +22,11 @@ Build the package (share files between host system and scratchbox via /tmp direc
 
 More info about these commands can be found here: http://wiki.maemo.org/Documentation/Maemo_5_Developer_Guide/Packaging,_Deploying_and_Distributing
 
+Uploading
+---------
+The package upload process is described here: http://wiki.maemo.org/Uploading_to_Extras-devel
+I use extras assistant: https://garage.maemo.org/extras-assistant/index.php
+
 TODO
 ----
 This list is copied from original repo on gitorious. I will create individual tickets later
