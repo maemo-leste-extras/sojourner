@@ -35,11 +35,6 @@ def get_text(node, strip_newlines=False):
         text = '\n\n'.join(
             [p.replace('\n', ' ')
                 for p in tidier_double_newlines.split('\n\n')])
-        
-        # Strip HTML tags
-        # Quick and Dirty: regular expressions shouldn't be used for this
-        text = re.sub(r'<(/)?[a-z]+>', '', text)
-        text = re.sub(r'&amp;', '&', text)
 
     return text.lstrip().rstrip()
 
@@ -320,12 +315,12 @@ class Event(object):
             desc = self.description
 
         if desc == '':
-            return "%s\n\n%s" % (self.full_summary, esc(self.abstract))
+            return "%s\n\n%s" % (self.full_summary, strip_tags(self.abstract))
         elif self.abstract == '':
-            return "%s\n\n%s" % (self.full_summary, esc(desc))
+            return "%s\n\n%s" % (self.full_summary, strip_tags(desc))
         else:
             return "%s\n\n%s\n\n%s" \
-                % (self.full_summary, esc(self.abstract), esc(desc))
+                % (self.full_summary, strip_tags(self.abstract), strip_tags(desc))
 
     def conflicts(self, other_event):
         if other_event == self:
@@ -333,3 +328,12 @@ class Event(object):
         return not (self.start <= other_event.start and \
                     self.end <= other_event.start or \
                     self.start >= other_event.end)
+
+def strip_tags(text):
+    # Strip HTML tags
+    # TODO: regular expressions shouldn't be used for this
+    text = re.sub(r'<(/)?[a-z]+>', '', text)
+    text = re.sub(r'&amp;', '&', text)
+    text = esc(text)
+    return text
+
