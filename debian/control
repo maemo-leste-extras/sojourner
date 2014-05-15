@@ -6,6 +6,7 @@ XS-Python-Version: all
 
 Package: sojourner
 XB-Maemo-Display-Name: Sojourner
+XSBC-Bugtracker: mailto:pub@loomchild.net
 Architecture: all
 Section: user/navigation
 Depends: python2.5, python-gobject (>= 2.16), python-hildon,

@@ -6,8 +6,7 @@ setup(
     version=VERSION,
     description='Conference schedule application for the Nokia N900',
     author='Will Thompson',
-    author_email='will@willthompson.co.uk',
-    url='http://gitorious.org/sojourner',
+    url='https://github.com/loomchild/sojourner',
     packages=['sojourner'],
     scripts=['bin/sojourner'],
     data_files=[

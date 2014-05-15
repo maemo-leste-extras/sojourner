@@ -36,8 +36,9 @@ TODO
 ----
 This list was copied from original repo on gitorious and extended. I will create individual tickets later.
 * Release a new package to test the process
-* Set-up issue tracker
+* Set-up issue tracker and update tracker URL - see http://wiki.maemo.org/Tracking_bugs_in_Extras
 * Create some screenshots and write longer project decription (original page as inspiration)
+* Promote the package to testing - see http://wiki.maemo.org/Extras-devel#For_developers
 
 * Allow hiding talks in the past
 * Colour/highlight talks happing right now (particularly important in favourites)
