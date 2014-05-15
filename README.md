@@ -6,7 +6,7 @@ This software was created by [Will Thompson](http://willthompson.co.uk/) and he 
 
 Download
 --------
-This app can be downloaded directly from extras-devel or extras-testing [Maemo repository](maemo.org/packages/view/sojourner/). Alternatively binary debian package can be downloaded from [Releases page](https://github.com/loomchild/sojourner/releases).
+This app can be downloaded directly from extras-devel or extras-testing [Maemo repository](http://maemo.org/packages/view/sojourner/). Alternatively binary debian package can be downloaded from [Releases page](https://github.com/loomchild/sojourner/releases).
 
 Packaging
 ---------
