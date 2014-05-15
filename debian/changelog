@@ -1,3 +1,14 @@
+sojourner (0.3.0) fremantle; urgency=low
+
+  * Added support for schedule download via HTTPS.
+  * Stripping HTML tags from event descriptions.
+  * Fixed error messages.
+  * Added conference data for FOSDEM 2014 (just for testing).
+  * Updated icons.
+  * Updated maintainer information.
+
+ -- Jarek Lipski <pub@loomchild.net>  Thu, 15 May 2014 09:00:00 +0200
+
 sojourner (0.2.5) fremantle; urgency=low
 
   * Added conference data for FOSDEM 2012.
