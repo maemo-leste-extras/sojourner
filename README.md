@@ -25,6 +25,7 @@ More info about these commands can be found here: http://wiki.maemo.org/Document
 Uploading
 ---------
 The package upload process is described here: http://wiki.maemo.org/Uploading_to_Extras-devel
+
 I use extras assistant: https://garage.maemo.org/extras-assistant/index.php
 
 TODO
