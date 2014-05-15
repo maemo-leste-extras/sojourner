@@ -4,6 +4,10 @@ It originally showed the schedule for [FOSDEM](http://fosdem.org/); it has subse
 
 This software was created by [Will Thompson](http://willthompson.co.uk/) and he deserves all the credit; I just fix critical bugs and make new releases.
 
+Download
+--------
+This app can be downloaded directly from extras-devel or extras-testing [Maemo repository](maemo.org/packages/view/sojourner/). Alternatively binary debian package can be downloaded from [Releases page](https://github.com/loomchild/sojourner/releases).
+
 Packaging
 ---------
 To build sojourner debian package you need N900 SDK. The easiest (but probably not the fastest) way to obtain it is to use vagrant. Configuration file can be downloaded from here: https://github.com/silvio/vagrant-n900-sdk
