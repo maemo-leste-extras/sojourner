@@ -32,24 +32,7 @@ The package upload process is described here: http://wiki.maemo.org/Uploading_to
 
 I use extras assistant: https://garage.maemo.org/extras-assistant/index.php
 
-TODO
-----
-This list was copied from original repo on gitorious and extended. I will create individual tickets later.
-* Release a new package to test the process
-* Set-up issue tracker and update tracker URL - see http://wiki.maemo.org/Tracking_bugs_in_Extras
-* Create some screenshots and write longer project decription (original page as inspiration)
-* Promote the package to testing - see http://wiki.maemo.org/Extras-devel#For_developers
+Issues
+------
+To report bugs or request a feature please go to my [Trac](http://trac.loomchild.net/sojourner), register a new user account and post the issue.
 
-* Allow hiding talks in the past
-* Colour/highlight talks happing right now (particularly important in favourites)
-* Maybe include “talks starting within half an hour of this one ending”, as seen on fosdem.org event pages?
-* Show something more useful than a blank screen when the user taps Favourites and they don’t have any
-* Have a single list store for events, with filters of it for each view, to make propagating favourites changes less clunky (This actually doesn’t work out so well: the stores have pretty different contents. Maybe instead there should be favourite-added, favourite-removed signals on the Schedule object?)
-* Make launching directly into portrait mode work
-* Use a real Markdown parser for event details
-* Extract links from the schedule, have clickable buttons to go to them
-* Make it possible to show other conferences
-* Ensure the margins are correct
-* Add a map
-* Show the year and dates of the conference on the front screen.
-  
