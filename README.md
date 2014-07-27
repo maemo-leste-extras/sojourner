@@ -2,7 +2,7 @@
 
 It originally showed the schedule for [FOSDEM](http://fosdem.org/); it has subsequently been made to show others, thanks mainly to wonderful contributors! It's written in *Python* and uses the [Hildon](http://pymaemo.garage.maemo.org/python_hildon_manual/) widget set. 
 
-This software was created by [Will Thompson](http://willthompson.co.uk/) and he deserves all the credit; I just fix critical bugs and make new releases.
+This software was created by [Will Thompson](http://willthompson.co.uk/) and he deserves all the credit; I just fix critical bugs and make new releases. This is the official and actively maintained fork.
 
 Download
 --------
