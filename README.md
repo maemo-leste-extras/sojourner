@@ -16,11 +16,11 @@ After booting the virtual machine run scratchbox
 
 	scratchbox
 
-Install the package dependencies
+Install the package dependencies (only first time)
 	
 	fakeroot apt-get install cdbs python2.5 python-central
 
-Build the package (share files between host system and scratchbox via /tmp directory)
+Go to the project directory and build the package (share files between host system and scratchbox via /tmp directory)
 	
 	dpkg-buildpackage -rfakeroot
 
