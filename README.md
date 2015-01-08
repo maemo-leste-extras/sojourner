@@ -24,13 +24,13 @@ Go to the project directory and build the package (share files between host syst
 	
 	dpkg-buildpackage -rfakeroot
 
-More info about these commands can be found here: http://wiki.maemo.org/Documentation/Maemo_5_Developer_Guide/Packaging,_Deploying_and_Distributing
+More info about these commands can be found [here](http://wiki.maemo.org/Documentation/Maemo_5_Developer_Guide/Packaging,_Deploying_and_Distributing).
 
 Uploading
 ---------
-The package upload process is described here: http://wiki.maemo.org/Uploading_to_Extras-devel
+The package upload process is described [here](http://wiki.maemo.org/Uploading_to_Extras-devel).
 
-I use extras assistant: https://garage.maemo.org/extras-assistant/index.php
+I use [extras assistant](https://garage.maemo.org/extras-assistant/index.php). After uploading the package is quickly available in extras-devel repo, but updating [package website](http://maemo.org/packages/view/sojourner/) takes few hours.
 
 Issues
 ------
