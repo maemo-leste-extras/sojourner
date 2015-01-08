@@ -332,7 +332,7 @@ class Event(object):
 def strip_tags(text):
     # Strip HTML tags
     # TODO: regular expressions shouldn't be used for this
-    text = re.sub(r'<(/)?[a-z]+>', '', text)
+    text = re.sub(r'<(/)?[a-z]+[0-9]*>', '', text)
     text = re.sub(r'&amp;', '&', text)
     text = esc(text)
     return text
