@@ -1,3 +1,10 @@
+sojourner (0.3.1) fremantle; urgency=low
+
+  * Added conference data for FOSDEM 2015.
+  * Improved stripping HTML tags from descriptions - include h1..6.
+
+ -- Jarek Lipski <pub@loomchild.net>  Thu, 08 Jan 2015 12:00:00 +0100
+
 sojourner (0.3.0) fremantle; urgency=low
 
   * Added support for schedule download via HTTPS.
