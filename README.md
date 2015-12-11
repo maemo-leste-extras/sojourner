@@ -32,7 +32,3 @@ The package upload process is described [here](http://wiki.maemo.org/Uploading_t
 
 I use [extras assistant](https://garage.maemo.org/extras-assistant/index.php). After uploading the package is quickly available in extras-devel repo, but updating [package website](http://maemo.org/packages/view/sojourner/) takes few hours.
 
-Issues
-------
-To report bugs or request a feature please go to my [Trac](http://trac.loomchild.net/sojourner), register a new user account and post the issue.
-
