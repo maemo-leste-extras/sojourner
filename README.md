@@ -32,3 +32,12 @@ The package upload process is described [here](http://wiki.maemo.org/Uploading_t
 
 I use [extras assistant](https://garage.maemo.org/extras-assistant/index.php). After uploading the package is quickly available in extras-devel repo, but updating [package website](http://maemo.org/packages/view/sojourner/) takes few hours.
 
+Adding a conference
+-------------------
+
+Things to remember:
+
+* update banner (see [icons/](icons/) for input file)
+* rename conference file, update links in setup
+* update version in __init__ file and changelog
+* see [this commit](https://github.com/loomchild/sojourner/commit/c58164a91d1c9bb354dcb4f094d425cbfd53b96a) for reference
