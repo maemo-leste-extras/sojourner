@@ -1,3 +1,9 @@
+sojourner (0.3.7) fremantle; urgency=low
+
+  * Added conference data for FOSDEM 2019.
+
+ -- Jonathan Brielmaier <jbrielmaier@suse.de> We, 09 Jan 2019 18:00:00 +0100
+
 sojourner (0.3.6) fremantle; urgency=low
 
   * Added conference data for FOSDEM 2018.
