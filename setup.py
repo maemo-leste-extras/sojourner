@@ -15,7 +15,7 @@ setup(
         ('share/icons/hicolor/scalable/hildon', ['icons/64x64/sojourner.png']),
         ('share/applications/hildon', ['sojourner.desktop']),
         ('share/sojourner/', ['sojourner.cfg']),
-        # Data for the supported conferences        
+        # Data for the supported conferences
         # TODO: Separate the conference data to its own package
         ('share/sojourner/conferences/fosdem2011', ['conferences/fosdem2011/banner.png']),
         ('share/sojourner/conferences/fosdem2011', ['conferences/fosdem2011/fosdem2011.cfg']),
@@ -37,6 +37,8 @@ setup(
         ('share/sojourner/conferences/fosdem2017', ['conferences/fosdem2017/fosdem2017.cfg']),
         ('share/sojourner/conferences/fosdem2018', ['conferences/fosdem2018/banner.png']),
         ('share/sojourner/conferences/fosdem2018', ['conferences/fosdem2018/fosdem2018.cfg']),
+        ('share/sojourner/conferences/fosdem2019', ['conferences/fosdem2019/banner.png']),
+        ('share/sojourner/conferences/fosdem2019', ['conferences/fosdem2019/fosdem2019.cfg']),
     ],
     license='GPL v3',
 )
