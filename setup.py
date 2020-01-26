@@ -39,6 +39,8 @@ setup(
         ('share/sojourner/conferences/fosdem2018', ['conferences/fosdem2018/fosdem2018.cfg']),
         ('share/sojourner/conferences/fosdem2019', ['conferences/fosdem2019/banner.png']),
         ('share/sojourner/conferences/fosdem2019', ['conferences/fosdem2019/fosdem2019.cfg']),
+        ('share/sojourner/conferences/fosdem2020', ['conferences/fosdem2020/banner.png']),
+        ('share/sojourner/conferences/fosdem2020', ['conferences/fosdem2020/fosdem2020.cfg']),
     ],
     license='GPL v3',
 )
