@@ -2,16 +2,14 @@ Source: sojourner
 Priority: optional
 Maintainer: Jarek Lipski <pub@loomchild.net>
 Build-Depends: debhelper, dh-python, python-all
-XS-Python-Version: all
 
 Package: sojourner
+Architecture: all
 XB-Maemo-Display-Name: Sojourner
 XSBC-Bugtracker: mailto:pub@loomchild.net
-Architecture: all
 Section: user/navigation
 Depends: python2.7, python-gobject (>= 2.16), python-hildon,
          python-osso, python-dbus
-XS-Python-Version: all
 Description: Sojourner conference schedule viewer.
  Talks can be viewed by topic, by room or by time. Your favourite events can 
  be starred for easy browsing later on. It originally showed the schedule for 
