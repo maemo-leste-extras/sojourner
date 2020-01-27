@@ -1,9 +1,3 @@
-sojourner (0.3.9) fremantle; urgency=low
-
-  * Used schedule proxy, since TLS version not supported.
-
- -- Jarek Lipski <pub@loomchild.net>  Mon, 27 Jan 2020 12:00:00 +0100
-
 sojourner (0.3.8) fremantle; urgency=low
 
   * Added conference data for FOSDEM 2020.
