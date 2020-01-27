@@ -1,3 +1,9 @@
+sojourner (0.4.0) unstable; urgency=low
+
+  * Added conference data for FOSDEM 2020.
+
+ -- Merlijn Wajer <merlijn@wizzup.org> Mon, 27 Jan 2020 15:31:46 +0100
+
 sojourner (0.3.8) fremantle; urgency=low
 
   * Added conference data for FOSDEM 2020.
